@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link bootstrp -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- libk js boostrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- link local css -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<!-- calcualtor start -->
+
+
+    <div class="calculator shadow rounded">
+      <form action="" name="form">
+          <input type="text" name="result" class="form-contrl text-area" value="" placeholder="0">
+     
+          <div class="button-area">
+  
+            <div class="button-line">
+  
+              <input type="button" name="btn" value="7" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="8" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="9" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="+" class="btn btn bg-warning" onclick="calculat(this.value)">
+  
+            </div>
+            <div class="button-line">
+  
+              <input type="button" name="btn" value="4" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="5" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="6" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="-" class="btn btn bg-warning" onclick="calculat(this.value)">
+  
+            </div>
+            <div class="button-line">
+  
+              <input type="button" name="btn" value="1" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="2" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="3" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="*" class="btn btn bg-warning" onclick="calculat(this.value)">
+  
+            </div>
+            <div class="button-line">
+  
+              <input type="button" name="btn" value="0" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="00" class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="." class="btn btn bg-primary" onclick="calculat(this.value)">
+              <input type="button" name="btn" value="/" class="btn btn bg-warning" onclick="calculat(this.value)">
+  
+            </div>
+            <div class="last">
+  
+              <input type="button" name="btn" value="C" class="btn btn bg-warning" onclick="result.value = null">
+              <input type="button" name="btn" value="=" class="btn btn bg-warning" onclick="result.value = eval(form.result.value)">
+  
+            </div>
+  
+          </div>
+      </form>
+  
+    </div>
+
+
+<!-- calculator end -->
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
